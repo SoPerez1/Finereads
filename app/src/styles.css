@@ -1,1 +1,25 @@
-/* You can add global styles to this file, and also import other style files */
+:root{
+    --primary: #222831;
+    --primary-dark:#393E46 ;
+    --primary-light: #948979;    
+ 
+  --background: #0c1118;       
+  --card-bg: rgba(255, 255, 255, 0.05); 
+  --shadow: rgba(0, 0, 0, 0.3);
+
+  --text-primary: #DFD0B8;     
+  --text-secondary: #b9ac97;   
+  --text-accent: #7b5ea8;      
+  --text-muted: #6f6f6f;
+
+
+  --input-bg: #1a1a1a;
+    
+}
+
+body {
+  background: var(--background);
+  color: var(--text-primary);
+  margin: 0;
+  font-family: sans-serif;
+}
