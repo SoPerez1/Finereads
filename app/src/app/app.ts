@@ -9,5 +9,5 @@ import { Start } from "./components/start/start/start";
   styleUrl: './app.css'
 })
 export class App {
-  protected readonly title = signal('Scriba');
+  protected readonly title = signal('finereads');
 }

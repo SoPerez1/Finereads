@@ -1,36 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scriba</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
 
-<section class="hero">
-  <img src="assets/title.jpg" alt="Banner" class="hero-banner">
-  <div class="hero-text">
-    <h1>{{ title() }}</h1>
-    <p>Tu rincón para leer, escribir y compartir historias.</p>
-  </div>
-</section>
+    <!-- Hero -->
+    <section class="hero">
+      <img src="assets/title.jpg" alt="Banner" class="hero-banner">
+      <div class="hero-text">
+        <h1>{{ title() }}</h1>
+        <p>Book Journal</p>
+      </div>
+    </section>
 
+    <!-- Contenido principal -->
+    <main>
+      <!-- Buscador -->
+      <section class="search-section">
+        <form role="search">
+          <input type="text" placeholder="Género/Autor">
+          <button type="submit">Search</button>
+        </form>
+      </section>
 
+      <!-- Info y footer dentro del main -->
+      <section class="info-section">
+        <footer class="info-footer">
+          <article>
+            <h4>Contáctame</h4>
+            <p>Perez Sofia</p>
+          </article>
+          <article>
+            <h4>Proyecto personal</h4>
+            <p>Desarrollado como proyecto final de Full Stack Developer, UTN + GSC.</p>
+          </article>
+        </footer>
+      </section>
+    </main>
 
-<main>
-  <section>
-    <form role="search">
-      <input type="text" placeholder="Genero/Autor">
-      <button type="submit">Search</button>
-    </form>
-  </section>
-
-  <section>
-    <footer>
-      <article>
-        <h4>Contáctame</h4>
-        <p>Perez Sofia</p>
-      </article>
-      <article>
-        <h4>Proyecto personal</h4>
-        <p>Desarrollado como proyecto final de Full Stack Developer, UTN + GSC.</p>
-      </article>
+    <footer class="main-footer">
+      <small>&copy; 2024 Scriba. Todos los derechos reservados.</small>
     </footer>
-  </section>
-</main>
 
-<footer>
-  <small>&copy; 2024 Scriba. Todos los derechos reservados.</small>
-</footer>
+  </body>
+</html>
