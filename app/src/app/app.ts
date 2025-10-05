@@ -6,7 +6,7 @@ import { Start } from "./components/start/start/start";
   selector: 'app-root',
   imports: [RouterOutlet, Start],
   templateUrl: './app.html',
-  styleUrl: './app.css'
+  styleUrls: ['./app.css']
 })
 export class App {
   protected readonly title = signal('finereads');

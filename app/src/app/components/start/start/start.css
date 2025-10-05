@@ -1,8 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap');
 .start-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr); 
   gap: 24px;
-  padding: 40px;
+  padding: 30px;
 }
 
 .card {
@@ -15,8 +16,6 @@
   justify-content: center;
   transition: all 0.4s ease; 
   cursor: pointer;
-   width: 300px;
-  height: 300px;
 }
 
 .card img {
@@ -34,4 +33,36 @@
 }
 .card:hover img {
   transform: scale(1.1); 
+}
+
+
+.card-text1{
+  
+  padding:15px;
+  border-radius :  8px;
+  border: 1px solid #393E46;
+  width: 400px;
+  height: 150px;
+}
+.card-text2{
+  
+  padding: 10px;
+  border-radius :  8px;
+  border: 1px solid #393E46;
+  width: 400px;
+  height: 220px;
+}
+
+.card-text1, .card-text2 h3{
+  margin : 0;
+  font-size: 1.5rem;
+  position: relative;
+  font-family: "Cormorant Garamond";
+  text-align: center;
+}
+.card-text1, .card-text2 p{
+  margin : 0;
+  font-size: 21px;
+  position: relative;
+  font-family: "Cormorant Garamond";
 }
