@@ -1,14 +1,18 @@
 .bento-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  grid-auto-rows: 220px;
-  gap: 24px;
-  max-width: 900px;
+  grid-auto-rows: minmax(240px, auto);
+  gap: 28px;
+  max-width: 950px;
   margin: 0 auto;
   padding: 40px 20px;
   border-radius: 10%;
   margin-top: 40px;
+  margin-bottom: 30px;
   animation: fadeIn 0.8s ease-in-out;
+  align-items: stretch;
+  position: relative;
+  overflow: hidden; /* evita que el texto anterior quede visible */
 }
 
 .bento-item {
@@ -27,7 +31,8 @@
   text-align: center;
   transition: all 0.4s ease;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
-  overflow: hidden;
+  opacity: 0; /* empieza invisible */
+  animation: fadeInUp 0.7s ease forwards; /* aparece con fade */
 }
 
 .bento-item:hover {
@@ -42,7 +47,7 @@
   font-size: 1.4rem;
   font-weight: 700;
   color: #1f1c1a;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
 }
 
 .bento-item p {
@@ -50,6 +55,7 @@
   font-size: 0.95rem;
   color: #4a4642;
   line-height: 1.5;
+  margin: 0;
 }
 
 .bento-item.large {
@@ -60,7 +66,26 @@
   grid-column: span 1;
 }
 
+/* Efecto de aparición limpia */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Animación del contenedor */
 @keyframes fadeIn {
-  from { opacity: 0; transform: translateY(20px); }
-  to { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }

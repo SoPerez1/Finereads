@@ -8,7 +8,6 @@ body {
   font-family: 'Nunito Sans', sans-serif;
 }
 
-/* HERO */
 .hero {
   position: relative;
   width: 100%;
@@ -23,7 +22,6 @@ body {
   filter: brightness(92%);
 }
 
-/* TÍTULO DEBAJO DEL HERO */
 .hero-heading {
   text-align: center;
   margin-top: 25px;
@@ -59,7 +57,6 @@ body {
   opacity: 0.6;
 }
 
-/* ANIMACIÓN aesthetic */
 @keyframes fadeInUp {
   from {
     opacity: 0;
@@ -71,7 +68,6 @@ body {
   }
 }
 
-/* RESPONSIVE */
 @media (max-width: 768px) {
   .hero-banner {
     height: 180px;
