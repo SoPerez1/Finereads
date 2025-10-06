@@ -9,15 +9,18 @@
 
     <section class="hero">
       <img src="assets/title.jpg" alt="Banner" class="hero-banner">
-      <div class="hero-text">
-        <h1>{{ title() }}</h1>
-        <p>Book Journal</p>
-      </div>
     </section>
+
+    <!-- Título debajo del hero -->
+    <div class="hero-heading">
+      <h1>{{ title() }}</h1>
+      <p>Book Journal</p>
+    </div>
 
     <main>
       <app-start></app-start>
       <app-prominent-author></app-prominent-author>
+
       <section class="search-section">
         <form role="search">
           <input type="text" placeholder="Género/Autor">

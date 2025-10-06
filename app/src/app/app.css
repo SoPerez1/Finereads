@@ -1,70 +1,87 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Quicksand:wght@400;600&family=Pinyon+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Nunito+Sans:wght@400;600&display=swap');
 
-body{
+body {
   max-width: 900px;
   margin: 0 auto;
-   display: block;
+  background: #f8f5f2;
+  color: #2f2c2a;
+  font-family: 'Nunito Sans', sans-serif;
 }
+
+/* HERO */
 .hero {
   position: relative;
   width: 100%;
-  overflow: hidden;
+  text-align: center;
 }
 
 .hero-banner {
-  margin-top: 5%;
   width: 100%;
-  height: 220px; 
-  object-fit: cover; 
+  height: 260px;
+  object-fit: cover;
+  border-radius: 6%;
+  filter: brightness(92%);
+}
+
+/* TÍTULO DEBAJO DEL HERO */
+.hero-heading {
+  text-align: center;
+  margin-top: 25px;
+  animation: fadeInUp 1s ease both;
+}
+
+.hero-heading h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 3.3rem;
+  font-weight: 700;
+  color: #1f1c1a;
+  letter-spacing: -1px;
+  text-transform: uppercase;
+  margin-bottom: 6px;
+}
+
+.hero-heading p {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: 1.4rem;
+  color: #7a6a60;
+  margin-top: 0;
+}
+
+.hero-heading h1::after {
+  content: "";
   display: block;
-  border-radius: 4%;
+  width: 70px;
+  height: 2px;
+  background: #c1a98b;
+  margin: 10px auto 0;
+  border-radius: 1px;
+  opacity: 0.6;
 }
 
-.hero-text {
-  position: absolute;
-  top: 60%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-  padding: 20px 40px;
-  border-radius: 8px;
+/* ANIMACIÓN aesthetic */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
-h1 {
-  font-family: 'Quicksand', sans-serif;
-  color: #393E46;
-  text-align: center;
-}
-
-.hero-text h1 {
-  font-size: 3rem;
-  margin-bottom: 10px;
-  background: none;
-  text-align: center;
-  left: 10%;
-
-}
-
-.hero-text p {
-  font-size: 2rem;
-  margin: 0;
-  background: none;
-  font-family: 'Pinyon Script', cursive;
-  color: #393E46;
-    text-align: end;
-
-}
-
+/* RESPONSIVE */
 @media (max-width: 768px) {
   .hero-banner {
     height: 180px;
   }
 
-  .hero-text h1 {
-    font-size: 1.8rem;
+  .hero-heading h1 {
+    font-size: 2.2rem;
   }
 
-  .hero-text p {
-    font-size: 1rem;
+  .hero-heading p {
+    font-size: 1.1rem;
   }
 }
