@@ -1,0 +1,100 @@
+/* --- Contenedor general --- */
+.bento-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 10px;
+  padding-bottom: 25px;
+  margin-top: 60px;
+  border-radius: 11%;
+  margin-bottom: 60%;
+}
+.bento-container:nth-of-type(odd) {
+  background: #a5a3a5;
+}
+
+.author-mini {
+  background: linear-gradient(145deg, #fdf9f3, #faf3e9);
+  border-radius: 14px;
+  padding: 20px;
+  width: 100%;
+  color: #333;
+  text-align: center;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+}
+
+.author-mini:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 14px rgba(0, 0, 0, 0.12);
+}
+
+
+.author-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  margin-bottom: 15px;
+}
+
+.author-photo {
+  width: 55px;
+  height: 55px;
+  border-radius: 0%;
+  object-fit: cover;
+  border: 2px solid #f5f1f1;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+.author-info {
+  text-align: left;
+}
+
+.author-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #060606;
+  margin-bottom: 3px;
+}
+
+.author-name {
+  font-size: 0.9rem;
+  color: #e4dcdc;
+  margin: 0;
+}
+
+.author-carousel {
+  height: 180px;
+  overflow: hidden;
+  border-radius: 10px;
+  margin: 10px auto;
+  background: #faf7f2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.author-carousel img {
+  height: 100%;
+  max-height: 180px;
+  object-fit: contain;
+  border-radius: 8px;
+  transition: opacity 1s ease-in-out;
+  animation: fade 6s infinite;
+}
+
+@keyframes fade {
+  0%, 100% { opacity: 0.2; }
+  20%, 80% { opacity: 1; }
+}
+
+.author-description {
+  font-size: 0.85rem;
+  color: #444;
+  line-height: 1.4;
+  text-align: justify;
+  margin-top: 10px;
+}

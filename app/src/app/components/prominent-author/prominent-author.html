@@ -1,0 +1,26 @@
+<div class="bento-container">
+  <div class="bento-item newBento author-section">
+    <div class="author-header">
+      <div class="author-info">
+        <h3 class="author-title">{{ title }}</h3>
+        <h4 class="author-name">{{ name }}</h4>
+      </div>
+      <div class="author-photo">
+        <img src="assets/prominentAuthor/author.jpg" alt="Foto del autor" />
+      </div>
+    </div>
+
+    <div class="author-carousel">
+      <img [src]="images[currentIndex]" alt="Obra del autor" />
+    </div>
+
+    <p class="author-biography">
+      {{ biography }}
+    </p>
+
+    <p class="author-description">
+      Raven Kennedy es una autora reconocida por su saga <em>La Prisionera de Oro</em>,
+      donde mezcla mitología, poder y libertad en un universo poético y oscuro.
+    </p>
+  </div>
+</div>
