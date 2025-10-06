@@ -1,10 +1,22 @@
-<div class="start-grid">
-  <div class="card-text1">
-    <h3>Algunas historias te eligen a vos</h3>
+<div class="bento-container">
+  <div
+    class="bento-item large card-text1"
+    (mouseenter)="messageOn()"
+    (mouseleave)="messageOff()"
+  >
+    <h3>{{ bento1 }}</h3>
     <p>Solo hace falta abrir la página correcta</p>
+
+    <div class="bento-overlay" *ngIf="printThis">
+      <h3>¿Sabías que...?</h3>
+      <p>{{ bento2 }}</p>
+      <p>Leer es un ritual antiguo: encender la mente, sumergirse en lo desconocido, escuchar el murmullo de otras vidas.</p>
+      <p>Quien lee, habita muchos cuerpos, muchas almas, muchos destinos.</p>
+    </div>
   </div>
-  <div class=" card-text2">
-    <h3>¿Sabias que...?</h3>
-    <p>Entre las sombras de las páginas laten mundos enteros, esperando ser descubiertos. Leer es un ritual antiguo: encender la mente, sumergirse en lo desconocido, escuchar el murmullo de otras vidas. Quien lee, habita muchos cuerpos, muchas almas, muchos destinos.</p>
+
+  <div class="bento-item medium">
+    <h3>Lecturas breves</h3>
+    <p>Algunas palabras son puertas a otros mundos.</p>
   </div>
 </div>

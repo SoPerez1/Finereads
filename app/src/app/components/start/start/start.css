@@ -1,68 +1,125 @@
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap');
-.start-grid {
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&display=swap');
+
+body {
+  background: #f7f4ef;
+}
+
+.bento-container {
   display: grid;
-  grid-template-columns: repeat(4, 1fr); 
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  grid-auto-rows: 220px;
   gap: 24px;
-  padding: 30px;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  animation: fadeIn 0.8s ease-in-out;
+  border-radius: 10%;
 }
 
-.card {
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(22, 22, 22, 0.2);
-  border-radius: 16px;
-  overflow: hidden;
+.bento-item {
+  position: relative;
+  background: rgba(255, 255, 255, 0.45);
+  backdrop-filter: blur(12px) saturate(140%);
+  border: 1px solid rgba(199, 195, 187, 0.5);
+  border-radius: 18px;
+  padding: 25px;
+  color: #2d2d2d;
+  font-family: "Cormorant Garamond", serif;
   display: flex;
-  align-items: center;
+  flex-direction: column;
   justify-content: center;
-  transition: all 0.4s ease; 
-  cursor: pointer;
-}
-
-.card img {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-  aspect-ratio: 1 / 1; 
-  transition: transform 0.5s ease;
-}
-
-.card:hover {
-  transform: translateY(-8px) scale(1.02);
-  background: rgba(66, 66, 62, 0.1);
-  border-color: var(--text-accent); 
-}
-.card:hover img {
-  transform: scale(1.1); 
-}
-
-
-.card-text1{
-  
-  padding:15px;
-  border-radius :  8px;
-  border: 1px solid #393E46;
-  width: 400px;
-  height: 150px;
-}
-.card-text2{
-  
-  padding: 10px;
-  border-radius :  8px;
-  border: 1px solid #393E46;
-  width: 400px;
-  height: 220px;
-}
-
-.card-text1, .card-text2 h3{
-  margin : 0;
-  font-size: 1.5rem;
-  position: relative;
-  font-family: "Cormorant Garamond";
+  align-items: center;
   text-align: center;
+  transition: all 0.4s ease;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
 }
-.card-text1, .card-text2 p{
-  margin : 0;
-  font-size: 21px;
-  position: relative;
-  font-family: "Cormorant Garamond";
+
+.bento-item:hover {
+  transform: translateY(-4px);
+  background: rgba(255, 255, 255, 0.6);
+  border-color: rgba(199, 195, 187, 0.7);
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.1);
+}
+
+h3 {
+  margin: 0 0 8px;
+  font-size: 1.4rem;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  text-align: justify;
+
+}
+
+p {
+  margin:  10px;
+  line-height:18px;
+  color: #333333;
+  font-size: 16px;
+  font-family: 'Georgia',sans-serif;
+  text-align: justify;
+}
+
+.bento-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(16px) saturate(160%);
+  border-radius: 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  color: #1f1f1f;
+  text-align: center;
+  opacity: 0;
+  transform: translateY(10px);
+  animation: glassFade 0.5s forwards ease-in-out;
+  box-shadow: inset 0 0 18px rgba(0, 0, 0, 0.06);
+}
+
+.bento-overlay h3 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+  color: #2b2b2b;
+}
+
+.bento-overlay p {
+  color: #3a3a3a;
+  justify-content: start;
+}
+
+@keyframes glassFade {
+  from {
+    opacity: 0;
+    transform: translateY(15px) scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.bento-item.large:hover::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 18px;
+  background: radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.25), transparent 70%);
+  opacity: 0.4;
+  transition: opacity 0.4s ease;
+  pointer-events: none;
+}
+
+.bento-item.large {
+  grid-column: span 2;
+}
+.bento-item.medium {
+  grid-column: span 1;
 }
