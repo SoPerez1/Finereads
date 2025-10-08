@@ -9,6 +9,10 @@
   transition: all 0.3s ease;
   font-family: 'Nunito Sans', sans-serif;
 }
+body{
+  max-width: 900px;
+  margin: 0 auto;
+}
 
 .author-mini:hover {
   transform: translateY(-2px);

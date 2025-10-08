@@ -1,0 +1,35 @@
+.gender-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.gender-container button {
+  background-color: #fdfbf8;
+  border: 1px solid #e2d8cb;
+  border-radius: 20px;
+  padding: 6px 16px;
+  color: #4c4a46;
+  cursor: pointer;
+  font-size: 13px;
+  transition: all 0.3s ease;
+}
+
+.gender-container button:hover {
+  background-color: #f0e8dc;
+  transform: translateY(-1px);
+}
+
+.gender-content {
+  width: 100%;
+  max-width: 700px;
+  background-color: #fbf9f5;
+  border: 1px solid #e7dfd3;
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  text-align: center;
+  animation: fadeIn 0.4s ease-in-out;
+}

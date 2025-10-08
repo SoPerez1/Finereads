@@ -23,7 +23,6 @@ body {
 }
 
 .hero-heading {
-  text-align: center;
   margin-top: 25px;
   animation: fadeInUp 1s ease both;
 }
@@ -36,6 +35,7 @@ body {
   letter-spacing: -1px;
   text-transform: uppercase;
   margin-bottom: 6px;
+  text-align: center;
 }
 
 .hero-heading p {
@@ -44,6 +44,8 @@ body {
   font-size: 1.4rem;
   color: #7a6a60;
   margin-top: 0;
+  text-align: center;
+
 }
 
 .hero-heading h1::after {
@@ -53,7 +55,6 @@ body {
   height: 2px;
   background: #c1a98b;
   margin: 10px auto 0;
-  border-radius: 1px;
   opacity: 0.6;
 }
 
@@ -75,6 +76,7 @@ body {
 
   .hero-heading h1 {
     font-size: 2.2rem;
+    text-align: center;
   }
 
   .hero-heading p {

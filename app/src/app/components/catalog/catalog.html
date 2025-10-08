@@ -1,0 +1,23 @@
+<div class="catalog-container">
+  <div class="catalog-menu">
+    <button [class.active]="seccionActual === 'home'" (click)="cambiarSeccion('home')">home</button>
+    <button [class.active]="seccionActual === 'autor destacado'" (click)="cambiarSeccion('autor destacado')">autor destacado</button>
+    <button [class.active]="seccionActual === 'recomendaciones'" (click)="cambiarSeccion('recomendaciones')">recomendaciones</button>
+    <button [class.active]="seccionActual === 'géneros'" (click)="toggleGeneros()">géneros</button>
+    <button>&gt;</button>
+  </div>
+
+  <div class="gender-container" *ngIf="printGender">
+    <button (click)="selectGender2('Fantasía')">Fantasía</button>
+    <button (click)="selectGender2('Ciencia Ficción')">Ciencia Ficción</button>
+    <button (click)="selectGender2('Romance')">Romance</button>
+    <button (click)="selectGender2('Misterio')">Misterio</button>
+  </div>
+
+  <div class="gender-content" *ngIf="selectGender">
+    <h2>{{ selectGender }}</h2>
+    <p>Aquí podrías mostrar libros, autores o descripciones del género seleccionado.</p>
+  </div>
+
+  <app-prominent-author *ngIf="seccionActual === 'autor destacado'"></app-prominent-author>
+</div>
