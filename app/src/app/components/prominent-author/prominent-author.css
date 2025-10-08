@@ -1,23 +1,35 @@
+.bento-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 10px;
+  padding-bottom: 25px;
+  margin-top: 60px;
+  border-radius: 4%;
+  margin-bottom: 60%;
+}
+.bento-container:nth-of-type(odd) {
+  background: #e4c9a7;
+}
+
 .author-mini {
-  background: linear-gradient(145deg, #fcfaf7, #f7f3ec);
+  background: linear-gradient(145deg, #fdf9f3, #faf3e9);
   border-radius: 14px;
   padding: 20px;
   width: 100%;
-  color: #2f2c2a;
+  color: #333;
   text-align: center;
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
   transition: all 0.3s ease;
-  font-family: 'Nunito Sans', sans-serif;
-}
-body{
-  max-width: 900px;
-  margin: 0 auto;
 }
 
 .author-mini:hover {
   transform: translateY(-2px);
-  box-shadow: 0 5px 14px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 5px 14px rgba(0, 0, 0, 0.12);
 }
+
 
 .author-header {
   display: flex;
@@ -28,12 +40,12 @@ body{
 }
 
 .author-photo {
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
+  width: 55px;
+  height: 55px;
+  border-radius: 0%;
   object-fit: cover;
-  border: 2px solid #f0ebe5;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  border: 2px solid #f5f1f1;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
 }
 
 .author-info {
@@ -41,17 +53,15 @@ body{
 }
 
 .author-title {
-  font-family: 'Playfair Display', serif;
-  font-size: 1.2rem;
-  font-weight: 700;
-  color: #1f1c1a;
-  margin-bottom: 2px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #060606;
+  margin-bottom: 3px;
 }
 
 .author-name {
-  font-family: 'Nunito Sans', sans-serif;
   font-size: 0.9rem;
-  color: #7a726c;
+  color: #e4dcdc;
   margin: 0;
 }
 
@@ -60,7 +70,7 @@ body{
   overflow: hidden;
   border-radius: 10px;
   margin: 10px auto;
-  background: #fdfaf6;
+  background: #faf7f2;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -76,15 +86,14 @@ body{
 }
 
 @keyframes fade {
-  0%, 100% { opacity: 0.3; }
+  0%, 100% { opacity: 0.2; }
   20%, 80% { opacity: 1; }
 }
 
 .author-description {
-  font-size: 0.9rem;
-  color: #3c3936;
-  line-height: 1.5;
+  font-size: 0.85rem;
+  color: #444444;
+  line-height: 1.4;
   text-align: justify;
   margin-top: 10px;
-  font-family: 'Nunito Sans', sans-serif;
 }
