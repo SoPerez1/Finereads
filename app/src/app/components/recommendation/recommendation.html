@@ -1,0 +1,18 @@
+<div class="bento-container">
+  <div class="recommendation-section">
+    <div class="recommendation-header">
+      <h3 class="recommendation-title">{{ title }}</h3>
+      <p class="recommendation-name">{{ name }}</p>
+    </div>
+
+    <p class="galery-description">{{ description }}</p>
+
+    <div class="gallery">
+      <div class="book-card" *ngFor="let book of books">
+        <img [src]="book.image" [alt]="book.title" />
+        <p class="book-title">{{ book.title }}</p>
+        <p class="book-calification">{{ book.calification }}</p>
+      </div>
+    </div>
+  </div>
+</div>

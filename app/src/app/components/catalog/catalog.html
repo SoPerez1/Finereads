@@ -2,7 +2,9 @@
   <div class="catalog-menu">
     <button [class.active]="seccionActual === 'home'" (click)="cambiarSeccion('home')">home</button>
     <button [class.active]="seccionActual === 'autor destacado'" (click)="cambiarSeccion('autor destacado')">autor destacado</button>
+    <button [class.active]="seccionActual === 'mis lecturas'" (click)="cambiarSeccion('mis lecturas')">mis lecturas</button>
     <button [class.active]="seccionActual === 'recomendaciones'" (click)="cambiarSeccion('recomendaciones')">recomendaciones</button>
+
     <button [class.active]="seccionActual === 'géneros'" (click)="toggleGeneros()">géneros</button>
     <button>&gt;</button>
   </div>
@@ -20,4 +22,5 @@
   </div>
 
   <app-prominent-author *ngIf="seccionActual === 'autor destacado'"></app-prominent-author>
+  <app-recommendation *ngIf="seccionActual === 'recomendaciones'"></app-recommendation>
 </div>

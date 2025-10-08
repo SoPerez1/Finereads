@@ -1,11 +1,12 @@
 import { Component, EventEmitter, Output } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ProminentAuthor } from '../prominent-author/prominent-author';
+import { Recommendation } from "../recommendation/recommendation";
 
 @Component({
   selector: 'app-catalog',
   standalone: true,
-  imports: [CommonModule, ProminentAuthor],
+  imports: [CommonModule, ProminentAuthor, Recommendation],
   templateUrl: './catalog.html',
   styleUrls: ['./catalog.css']
 })
