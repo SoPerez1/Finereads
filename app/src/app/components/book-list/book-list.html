@@ -1,12 +1,17 @@
-<h2>Viral Books</h2>
+<h2>Libros pendientes</h2>
 
-<div *ngFor="let book of books">
+<div class="bookshelf">
   <app-book-item
+    *ngFor="let book of books"
     [book]="book"
-    (onSelect)="onSelect($event)"
-  ></app-book-item>
+    (onSelect)="onSelect($event)">
+  </app-book-item>
 </div>
 
 <p *ngIf="selectBook">
   Libro seleccionado: <strong>{{ selectBook }}</strong>
 </p>
+  <p *ngIf="selectBook">
+    Estado: <strong> pendiente </strong></p>
+
+  <p *ngIf="selectBook">

@@ -1,0 +1,25 @@
+.bookshelf {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 8px;
+  padding: 25px;
+  background: linear-gradient(145deg, #f5f2f4);
+  border-radius: 16px;
+  box-shadow: inset 0 0 20px rgba(128, 126, 124, 0.6);
+  max-width: 800px; 
+  margin: 40px auto; 
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+h2 {
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+  color: #7a6a60;
+  margin-bottom: 20px;
+}
+p{
+    text-align: center;
+    font-family: 'Nunito Sans', sans-serif;
+    color: #3a3a3a;
+    margin-top: 10px;
+}

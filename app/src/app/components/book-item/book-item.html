@@ -1,10 +1,3 @@
-<div class="book-card">
-  <h3>{{ book.title }}</h3>
-  <p><strong>Año:</strong> {{ book.year }}</p>
-
-  <p *ngIf="book.description">
-    {{ book.description }}
-  </p>
-
-  <button (click)="selectBook()">Seleccionar</button>
+<div class="book" (click)="selectBook()">
+  <span class="spine">{{ book.title }}</span>
 </div>

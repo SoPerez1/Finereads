@@ -9,67 +9,92 @@ import { BookItem } from "../book-item/book-item";
 })
 export class BookList {
 books = [
-    {
-        "title": "Alas de sangre",
-        "author": "Rebecca Yarros",
-        "year": 2023,
-        "description": "Violet Sorrengail entra en una academia militar donde debe aprender a montar dragones. Entre batallas, magia y un romance prohibido, la historia mezcla acción, emoción y pasión."
-    },
-    {
-        "title": "Una corte de rosas y espinas",
-        "author": "Sarah J. Maas",
-        "year": 2015,
-        "description": "Feyre, una cazadora humana, es llevada al reino de las hadas después de matar a una criatura mágica. Allí descubre secretos, magia y un amor que pondrá su vida en peligro."
-    },
-    {
-        "title": "Tormenta de ónix (Onyx Storm)",
-        "author": "Rebecca Yarros",
-        "year": 2025,
-        "description": "Tercera parte de la saga Empíreo. Dragones, alianzas, traiciones y una relación amorosa que crece en medio del caos. Muy esperado por los fans de 'Alas de sangre'."
-    },
-    {
-        "title": "Ciudad de media luna: Casa de tierra y sangre",
-        "author": "Sarah J. Maas",
-        "year": 2020,
-        "description": "Bryce Quinlan debe resolver un crimen sobrenatural mientras enfrenta sus propios demonios y una intensa conexión con un ángel caído. Fantasía urbana con romance épico."
-    },
-    {
-        "title": "Ciudad de media luna: Casa de cielo y aliento",
-        "author": "Sarah J. Maas",
-        "year": 2022,
-        "description": "Segunda parte de la saga. Bryce y Hunt se ven envueltos en conspiraciones políticas y mágicas, mientras su relación se pone a prueba."
-    },
-    {
-        "title": "Ciudad de media luna: Casa de fuego y sombra",
-        "author": "Sarah J. Maas",
-        "year": 2024,
-        "description": "La conclusión de la trilogía. Bryce lucha por salvar su mundo mientras se enfrenta a pérdidas, revelaciones y un amor que desafía al destino."
-    },
-    {
-        "title": "Las guerras del huracán",
-        "author": "Thea Guanzon",
-        "year": 2023,
-        "description": "Inspirada en la mitología del sudeste asiático, cuenta la historia de una princesa guerrera y su enemigo mortal. La tensión entre ellos se convierte en un amor peligroso."
-    },
-    {
-        "title": "Rivales divinos",
-        "author": "Rebecca Ross",
-        "year": 2023,
-        "description": "Dos periodistas rivales se escriben cartas sin saber quién está del otro lado. Entre guerras y dioses, surge un amor tierno y mágico."
-    },
-    {
-        "title": "El reino del puente",
-        "author": "Danielle L. Jensen",
-        "year": 2019,
-        "description": "Lara es enviada como espía para casarse con un rey enemigo, pero el odio se transforma en amor mientras descubre verdades que podrían destruir ambos reinos."
-    },
-    {
-        "title": "Rey de batalla y sangre",
-        "author": "Scarlett St. Clair",
-        "year": 2021,
-        "description": "Isolde es obligada a casarse con un rey vampiro para mantener la paz. Lo que comienza como una unión política se convierte en un amor apasionado y oscuro."
-    }
+  {
+    title: 'Alas de Sangre',
+    author: 'Rebecca Yarros',
+    year: 2023,
+    description: 'Violet Sorrengail entra en una academia militar donde debe aprender a montar dragones. Entre batallas, magia y romance, se enfrenta a su destino con fuego y coraje.',
+    image: 'assets/portadas/alasSangre.jpg'
+  },
+  {
+    title: 'Alas de Hierro',
+    author: 'Rebecca Yarros',
+    year: 2024,
+    description: 'La secuela de “Alas de Sangre” continúa con Violet desafiando las reglas del imperio y enfrentándose a secretos que podrían cambiarlo todo.',
+    image: 'assets/portadas/alasHierro.jpg'
+  },
+  {
+    title: 'Una Corte de Rosas y Espinas',
+    author: 'Sarah J. Maas',
+    year: 2015,
+    description: 'Feyre, una cazadora humana, es arrastrada al mundo de las hadas tras matar a una criatura mágica. Allí descubrirá un oscuro secreto y un amor imposible.',
+    image: 'assets/portadas/rosasEspinas.jpg'
+  },
+  {
+    title: 'Una Corte de Niebla y Furia',
+    author: 'Sarah J. Maas',
+    year: 2016,
+    description: 'Feyre debe enfrentarse a las secuelas de su tiempo en Bajo la Montaña y descubrir el poder que la conecta con Rhysand y la Corte Noche.',
+    image: 'assets/portadas/nieblaFuria.jpg'
+  },
+  {
+    title: 'Una Corte de Hielo y Estrellas',
+    author: 'Sarah J. Maas',
+    year: 2018,
+    description: 'Una historia puente que muestra cómo Feyre, Rhysand y sus amigos intentan reconstruir Velaris tras la guerra, mientras enfrentan nuevas amenazas.',
+    image: 'assets/portadas/hielosEstrellas.jpg'
+  },
+  {
+    title: 'Ciudad de Media Luna: Casa de Tierra y Sangre',
+    author: 'Sarah J. Maas',
+    year: 2020,
+    description: 'Bryce Quinlan busca justicia tras una tragedia que cambia su vida, en una ciudad donde humanos, ángeles, demonios y hadas conviven bajo un velo de secretos.',
+    image: 'assets/portadas/casaTierraSangre.jpg'
+  },
+  {
+    title: 'Ciudad de Media Luna: Casa de Cielo y Aliento',
+    author: 'Sarah J. Maas',
+    year: 2022,
+    description: 'Bryce y Hunt deben decidir si seguir las reglas del Asteri o rebelarse, mientras un nuevo peligro amenaza todo lo que aman.',
+    image: 'assets/portadas/casaCieloAliento.jpg'
+  },
+  {
+    title: 'Ciudad de Media Luna: Casa de Fuego y Sombra',
+    author: 'Sarah J. Maas',
+    year: 2024,
+    description: 'Bryce se encuentra en un nuevo mundo, mientras intenta regresar a su hogar y descubrir la verdad sobre los Asteri.',
+    image: 'assets/portadas/casaFuegoSombra.jpg'
+  },
+  {
+    title: 'Rivales Divinos',
+    author: 'Rebecca Ross',
+    year: 2023,
+    description: 'En medio de una guerra entre dioses, dos periodistas rivales descubren una conexión mágica a través de cartas y un amor que desafía la guerra.',
+    image: 'assets/portadas/rivalesDivinos.jpg'
+  },
+  {
+    title: 'El Reino del Puente',
+    author: 'Danielle L. Jensen',
+    year: 2019,
+    description: 'Lara, una princesa espía, se infiltra en el reino enemigo para destruirlo desde adentro, pero se enamora del rey al que debía traicionar.',
+    image: 'assets/portadas/reinoPuente.jpg'
+  },
+  {
+    title: 'El Libro de Azrael',
+    author: 'Amber V. Nicole',
+    year: 2022,
+    description: 'Alara, una mujer inmortal, se ve obligada a cooperar con un poderoso enemigo para evitar que un antiguo mal despierte.',
+    image: 'assets/portadas/libroAzrael.jpg'
+  },
+  {
+    title: 'Agregar nuevo libro',
+    author: '',
+    year: '',
+    description: '',
+    image: 'assets/portadas/portadaBlanco.jpg'
+  }
 ];
+
 selectBook : string = '';
 
   onSelect(bookTitle: string): void {

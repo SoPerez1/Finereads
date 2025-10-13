@@ -1,0 +1,24 @@
+.book {
+  position: relative;
+  width: 40px;
+  height: 200px;
+  background: #7a6a60;
+  border: 0.5px solid #322f2f;
+  border-radius: 3px;
+  margin: 0 4px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  color: #eeecec;
+  font-family: 'Georgia', serif;
+  font-size: 14px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease;
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.4);
+}
+
+.spine {
+  text-align: center;
+}
