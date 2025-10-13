@@ -3,8 +3,8 @@
 <div *ngFor="let book of books">
   <app-book-item
     [book]="book"
-    (bookSelected)="onSelect($event)">
-  </app-book-item>
+    (onSelect)="onSelect($event)"
+  ></app-book-item>
 </div>
 
 <p *ngIf="selectBook">
