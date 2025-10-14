@@ -23,3 +23,37 @@ p{
     color: #3a3a3a;
     margin-top: 10px;
 }
+.book-detail {
+  display: flex;
+  align-items: center;         /* centra verticalmente imagen y texto */
+  justify-content: center;     /* centra todo el bloque horizontalmente */
+  gap: 40px;                   /* separación entre imagen y texto */
+  max-width: 900px;
+  margin: 40px auto;
+  text-align: left;            /* el texto del lado derecho queda alineado */
+}
+
+.book-detail img {
+  width: 160px;
+  height: 240px;
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+.detail-info {
+  max-width: 500px;
+  font-family: 'Nunito Sans', sans-serif;
+  color: #3a3a3a;
+}
+
+.detail-info h3 {
+  font-family: 'Playfair Display', serif;
+  color: #7a6a60;
+  font-size: 22px;
+  margin-bottom: 8px;
+}
+
+.detail-info p {
+  margin: 6px 0;
+}

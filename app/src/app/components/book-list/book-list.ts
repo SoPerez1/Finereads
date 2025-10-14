@@ -85,13 +85,6 @@ books = [
     year: 2022,
     description: 'Alara, una mujer inmortal, se ve obligada a cooperar con un poderoso enemigo para evitar que un antiguo mal despierte.',
     image: 'assets/portadas/libroAzrael.jpg'
-  },
-  {
-    title: 'Agregar nuevo libro',
-    author: '',
-    year: '',
-    description: '',
-    image: 'assets/portadas/portadaBlanco.jpg'
   }
 ];
 
