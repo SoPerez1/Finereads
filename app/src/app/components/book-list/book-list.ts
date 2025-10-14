@@ -96,9 +96,15 @@ books = [
 ];
 
 selectBook : string = '';
+selectedBook: any = null;
+
 
   onSelect(bookTitle: string): void {
     this.selectBook = bookTitle;
-  }
+    const book = this.books.find(b => b.title === bookTitle);
 
+    setTimeout(() => {
+      this.selectedBook = book || null;
+    }, 500); 
+  }
 }

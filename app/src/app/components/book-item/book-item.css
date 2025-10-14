@@ -22,3 +22,8 @@
 .spine {
   text-align: center;
 }
+.book:hover {
+  transform: translateY(-0.5px) rotate(-8deg);
+  box-shadow: 0 8px 15px rgba(62, 61, 61, 0.3);
+  filter: brightness(1.1);
+}
