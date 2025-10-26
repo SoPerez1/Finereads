@@ -14,23 +14,35 @@
 h2 {
   text-align: center;
   font-family: 'Playfair Display', serif;
-  color: #7a6a60;
+  color:  rgb(66, 25, 34);
   margin-bottom: 20px;
 }
 p{
-    text-align: center;
+    text-align: start;
     font-family: 'Nunito Sans', sans-serif;
     color: #3a3a3a;
     margin-top: 10px;
 }
 .book-detail {
   display: flex;
-  align-items: center;         /* centra verticalmente imagen y texto */
-  justify-content: center;     /* centra todo el bloque horizontalmente */
-  gap: 40px;                   /* separación entre imagen y texto */
+  align-items: center;        
+  justify-content: center;    
+  gap: 40px;                   
   max-width: 900px;
   margin: 40px auto;
-  text-align: left;            /* el texto del lado derecho queda alineado */
+  text-align: left;           
+}
+.book-info {
+  max-width: 900px;
+  margin: 40px auto;
+  text-align: center;
+}
+
+.book-info p {
+  text-align: center;
+  font-family: 'Nunito Sans', sans-serif;
+  color: rgb(15, 15, 15);
+  margin-top: 10px;
 }
 
 .book-detail img {
@@ -38,18 +50,18 @@ p{
   height: 240px;
   border-radius: 10px;
   object-fit: cover;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+  box-shadow: 0 4px 8px rgb(66, 25, 34);
 }
 
 .detail-info {
   max-width: 500px;
   font-family: 'Nunito Sans', sans-serif;
-  color: #3a3a3a;
+  color:  rgb(66, 25, 34);
 }
 
 .detail-info h3 {
   font-family: 'Playfair Display', serif;
-  color: #7a6a60;
+  color:  rgb(66, 25, 34);
   font-size: 22px;
   margin-bottom: 8px;
 }

@@ -1,6 +1,6 @@
 import { Component,OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common'
-import { Inyeccion8 } from '../../inyeccion8';
+import { InyRecommendation } from '../../inyecciones/iny-recomendation';
 
 @Component({
   selector: 'app-recommendation',
@@ -14,11 +14,11 @@ export class Recommendation  implements OnInit {
   description:string = "Entre dragones, magos y secretos antiguos, cada historia es una puerta que me roba unas horas de sueño y me regala mil aventuras.";
 
   books: any[] = [];
-  constructor(private inyeccion8: Inyeccion8) {
+  constructor(private inyRecommendation: InyRecommendation) {
     this.ngOnInit();
   }
 
   ngOnInit(){
-    this.books = this.inyeccion8.getBooks();
+    this.books = this.inyRecommendation.getBooks();
   }
 }

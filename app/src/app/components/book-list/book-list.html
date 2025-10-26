@@ -8,21 +8,21 @@
   </app-book-item>
 </div>
 
-<p *ngIf="selectBook">
-  Libro seleccionado: <strong>{{ selectBook }}</strong>
-</p>
+<div class="book-info" *ngIf="selectedBook">
+  <p>
+    Libro seleccionado: <strong>{{ selectedBook.title }}</strong>
+  </p>
+  <p>
+    Estado: <strong>pendiente</strong>
+  </p>
 
-<p *ngIf="selectBook">
-  Estado: <strong>pendiente</strong>
-</p>
-
-    <div class="book-detail" *ngIf="selectedBook">
-      <img [src]="selectedBook.image" [alt]="selectedBook.title">
-      <div class="detail-info">
-        <h3>{{ selectedBook.title }}</h3>
-        <p><strong>Autor:</strong> {{ selectedBook.author }}</p>
-        <p><strong>Año:</strong> {{ selectedBook.year }}</p>
-        <p>{{ selectedBook.description }}</p>
-      </div>
+  <div class="book-detail">
+    <img [src]="selectedBook.image" [alt]="selectedBook.title">
+    <div class="detail-info">
+      <h3>{{ selectedBook.title }}</h3>
+      <p><strong>Autor:</strong> {{ selectedBook.author }}</p>
+      <p><strong>Año:</strong> {{ selectedBook.year }}</p>
+      <p>{{ selectedBook.description }}</p>
+    </div>
   </div>
-
+</div>

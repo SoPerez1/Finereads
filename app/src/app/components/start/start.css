@@ -44,21 +44,27 @@
   font-family: 'Playfair Display', serif;
   font-size: 1.4rem;
   font-weight: 700;
-  color: #1E392A; 
+  color: rgb(83, 71, 71); 
   margin-bottom: 12px;
   transition: color 0.3s ease;
 }
 
 .bento-item:hover h3 {
-  color: #A7C1A8; 
+  color: rgb(66, 25, 34); 
 }
-
+.bento-item:hover h2 {
+  color: rgb(66, 25, 34); 
+}
 .bento-item p {
   font-family: 'Nunito Sans', sans-serif;
   font-size: 0.95rem;
-  color: #424942; 
+  color: #7A7A7A; 
   line-height: 1.5;
   margin: 0;
+}
+.bento-item.searchHere {
+  grid-column: span 4;
+  text-align: center;
 }
 
 .bento-item.large {
@@ -67,6 +73,10 @@
 
 .bento-item.medium {
   grid-column: span 1;
+}
+.bento-item.description {
+  grid-column: span 4;
+  text-align: center;
 }
 
 @keyframes fadeInUp {
@@ -79,7 +89,7 @@
     transform: translateY(0);
   }
 }
-
+/*
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -90,3 +100,4 @@
     transform: translateY(0);
   }
 }
+*/

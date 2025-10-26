@@ -1,14 +1,11 @@
 <section class="hero">
+  <div class="hero-heading">
+    <h1>{{ title() }}</h1>
+    <p>Book</p>
+  </div>
   <img src="assets/title.jpg" alt="Banner" class="hero-banner">
+  
 </section>
-
-<div class="hero-heading">
-  <h1>{{ title() }}</h1>
-  <p>Book Journal</p>
-</div>
-
-
-
-<app-start></app-start>
-<app-footer></app-footer>
+<app-catalog  ></app-catalog>
 <router-outlet></router-outlet>
+<app-footer></app-footer>

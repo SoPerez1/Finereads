@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
-import { BookItem } from '../components/book-item/book-item';
-import { BookList } from '../components/book-list/book-list';
+import { BookItem } from "../components/book-item/book-item";
+import { BookList } from "../components/book-list/book-list";
+
 @Component({
   selector: 'app-book',
   imports: [BookItem, BookList],
