@@ -3,12 +3,20 @@
 .footer {
   max-width: 900px;
   margin: 0 auto;
-  background: #f8f5f2;
-  color: #2f2c2a;
+  background: linear-gradient(
+    145deg,
+    rgba(25, 118, 128, 0.35),
+    rgba(15, 40, 45, 0.55)
+  );
+  color: #807c7c;
   font-family: 'Nunito Sans', sans-serif;
+  padding-bottom: 16px 20px;
+  border-top-left-radius: 50px;
+  border-end-end-radius: 50px;
+
 }
 .footer-content {
   text-align: center;
-  padding: 15px;
+  padding: 16px 20px;
   font-size: 14px;
 }

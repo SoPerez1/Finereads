@@ -9,7 +9,11 @@ import { CommonModule } from '@angular/common';
 })
 export class Start {
 bento1: string = "Algunas historias te elijen a vos";
-bento2: string ="Entre las sombras de las páginas laten mundos enteros, esperando ser descubiertos."
+bento2: string ="Quien lee, habita muchos cuerpos, muchas almas, muchos destinos.";
+descriptionFinereads: string = "En Finereads, encontrarás un espacio dedicado a tus lecturas, donde podrás llevar un registro de tus libros leídos, tus pensamientos y emociones sobre cada uno de ellos. Además, podrás descubrir nuevas lecturas recomendadas, así como compartir tus propias reseñas y opiniones con otros lectores. Finereads es la herramienta perfecta para cualquier amante de los libros que desee profundizar en su experiencia de lectura.";
+image= [
+    'assets/start/image-bento.jpg'
+  ];
 printThis : boolean = false;
 
   messageOn(){

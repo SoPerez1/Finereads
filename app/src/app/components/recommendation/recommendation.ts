@@ -9,8 +9,8 @@ import { InyRecommendation } from '../../inyecciones/iny-recomendation';
   styleUrls: ['./recommendation.css']
 })
 export class Recommendation  implements OnInit {
-  title: string = "Mi rincón...";
-  name: string = "Lecturas para perderse entre mundos imposibles";
+  title: string = "Ecos de mis lecturas";
+  name: string = "Historias que me han marcado y merecen un lugar en la estanteria de mis recuerdos.";
   description:string = "Entre dragones, magos y secretos antiguos, cada historia es una puerta que me roba unas horas de sueño y me regala mil aventuras.";
 
   books: any[] = [];

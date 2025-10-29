@@ -1,10 +1,13 @@
 .catalog-menu button,
 .gender-container button {
-  background-color: #fdfbf8;
-  border: 1px solid #e2d8cb;
+ background: linear-gradient(
+    145deg,
+    rgba(25, 118, 128, 0.35),
+    rgba(15, 40, 45, 0.55)
+  );  border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 20px;
   padding: 6px 16px;
-  color: #4c4a46;
+  color: #f0f0f0;
   cursor: pointer;
   font-size: 13px;
   transition: all 0.3s ease;
@@ -17,9 +20,13 @@
 }
 
 .catalog-menu button.active {
-  background-color: #e8dfd3;
+ background: linear-gradient(
+    145deg,
+    rgba(25, 118, 128, 0.35),
+    rgba(15, 40, 45, 0.55)
+  );  
   border-color: #d5c7b8;
-  color:  rgb(66, 25, 34);
+  color: #f0f0f0;
   font-weight: 500;
 }
 
