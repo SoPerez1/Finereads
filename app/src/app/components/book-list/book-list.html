@@ -1,4 +1,4 @@
-<h2>Libros pendientes</h2>
+<h2>Pending Books</h2>
 
 <div class="bookshelf">
   <app-book-item
@@ -6,22 +6,26 @@
     [book]="book"
     (onSelect)="onSelect($event)">
   </app-book-item>
+
+  <div class="bento-item-image">
+    <img [src]="image[0]" alt="cat">
+  </div>
 </div>
 
 <div class="book-info" *ngIf="selectedBook">
   <p>
-    Libro seleccionado: <strong>{{ selectedBook.title }}</strong>
+    Selected book: <strong>{{ selectedBook.title }}</strong>
   </p>
   <p>
-    Estado: <strong>pendiente</strong>
+    Status: <strong>pending</strong>
   </p>
 
   <div class="book-detail">
     <img [src]="selectedBook.image" [alt]="selectedBook.title">
     <div class="detail-info">
       <h3>{{ selectedBook.title }}</h3>
-      <p><strong>Autor:</strong> {{ selectedBook.author }}</p>
-      <p><strong>Año:</strong> {{ selectedBook.year }}</p>
+      <p><strong>Author:</strong> {{ selectedBook.author }}</p>
+      <p><strong>Year:</strong> {{ selectedBook.year }}</p>
       <p>{{ selectedBook.description }}</p>
     </div>
   </div>

@@ -10,80 +10,80 @@ export class BookService {
   getBooks() {
     return [
       {
-        title: 'Alas de Sangre',
+        title: 'Wings of Blood',
         author: 'Rebecca Yarros',
         year: 2023,
-        description: 'Violet Sorrengail entra en una academia militar donde debe aprender a montar dragones. Entre batallas, magia y romance, se enfrenta a su destino con fuego y coraje.',
+        description: 'Violet Sorrengail enters a military academy where she must learn to ride dragons. Amid battles, magic, and romance, she faces her destiny with fire and courage.',
         image: 'assets/portadas/alasSangre.jpg'
       },
       {
-        title: 'Alas de Hierro',
+        title: 'Wings of Iron',
         author: 'Rebecca Yarros',
         year: 2024,
-        description: 'La secuela de “Alas de Sangre” continúa con Violet desafiando las reglas del imperio y enfrentándose a secretos que podrían cambiarlo todo.',
+        description: 'The sequel to "Wings of Blood" continues with Violet defying the empire’s rules and confronting secrets that could change everything.',
         image: 'assets/portadas/alasHierro.jpg'
       },
       {
-        title: 'Una Corte de Rosas y Espinas',
+        title: 'A Court of Thorns and Roses',
         author: 'Sarah J. Maas',
         year: 2015,
-        description: 'Feyre, una cazadora humana, es arrastrada al mundo de las hadas tras matar a una criatura mágica. Allí descubrirá un oscuro secreto y un amor imposible.',
+        description: 'Feyre, a human huntress, is dragged into the world of the fae after killing a magical creature. There she uncovers a dark secret and an impossible love.',
         image: 'assets/portadas/rosasEspinas.jpg'
       },
       {
-        title: 'Una Corte de Niebla y Furia',
+        title: 'A Court of Mist and Fury',
         author: 'Sarah J. Maas',
         year: 2016,
-        description: 'Feyre debe enfrentarse a las secuelas de su tiempo en Bajo la Montaña y descubrir el poder que la conecta con Rhysand y la Corte Noche.',
+        description: 'Feyre must face the aftermath of her time Under the Mountain and discover the power that connects her to Rhysand and the Night Court.',
         image: 'assets/portadas/nieblaFuria.jpg'
       },
       {
-        title: 'Una Corte de Hielo y Estrellas',
+        title: 'A Court of Frost and Starlight',
         author: 'Sarah J. Maas',
         year: 2018,
-        description: 'Una historia puente que muestra cómo Feyre, Rhysand y sus amigos intentan reconstruir Velaris tras la guerra, mientras enfrentan nuevas amenazas.',
+        description: 'A bridge story showing how Feyre, Rhysand, and their friends try to rebuild Velaris after the war while facing new threats.',
         image: 'assets/portadas/hielosEstrellas.jpg'
       },
       {
-        title: 'Ciudad de Media Luna: Casa de Tierra y Sangre',
+        title: 'Crescent City: House of Earth and Blood',
         author: 'Sarah J. Maas',
         year: 2020,
-        description: 'Bryce Quinlan busca justicia tras una tragedia que cambia su vida, en una ciudad donde humanos, ángeles, demonios y hadas conviven bajo un velo de secretos.',
+        description: 'Bryce Quinlan seeks justice after a life-changing tragedy in a city where humans, angels, demons, and fae coexist under a veil of secrets.',
         image: 'assets/portadas/casaTierraSangre.jpg'
       },
       {
-        title: 'Ciudad de Media Luna: Casa de Cielo y Aliento',
+        title: 'Crescent City: House of Sky and Breath',
         author: 'Sarah J. Maas',
         year: 2022,
-        description: 'Bryce y Hunt deben decidir si seguir las reglas del Asteri o rebelarse, mientras un nuevo peligro amenaza todo lo que aman.',
+        description: 'Bryce and Hunt must decide whether to follow the Asteri’s rules or rebel, while a new threat endangers everything they love.',
         image: 'assets/portadas/casaCieloAliento.jpg'
       },
       {
-        title: 'Ciudad de Media Luna: Casa de Fuego y Sombra',
+        title: 'Crescent City: House of Flame and Shadow',
         author: 'Sarah J. Maas',
         year: 2024,
-        description: 'Bryce se encuentra en un nuevo mundo, mientras intenta regresar a su hogar y descubrir la verdad sobre los Asteri.',
+        description: 'Bryce finds herself in a new world while trying to return home and uncover the truth about the Asteri.',
         image: 'assets/portadas/casaFuegoSombra.jpg'
       },
       {
-        title: 'Rivales Divinos',
+        title: 'Divine Rivals',
         author: 'Rebecca Ross',
         year: 2023,
-        description: 'En medio de una guerra entre dioses, dos periodistas rivales descubren una conexión mágica a través de cartas y un amor que desafía la guerra.',
+        description: 'Amid a war between gods, two rival journalists discover a magical connection through letters and a love that defies the war.',
         image: 'assets/portadas/rivalesDivinos.jpg'
       },
       {
-        title: 'El Reino del Puente',
+        title: 'The Bridge Kingdom',
         author: 'Danielle L. Jensen',
         year: 2019,
-        description: 'Lara, una princesa espía, se infiltra en el reino enemigo para destruirlo desde adentro, pero se enamora del rey al que debía traicionar.',
+        description: 'Lara, a spy princess, infiltrates the enemy kingdom to destroy it from within but falls in love with the king she was meant to betray.',
         image: 'assets/portadas/reinoPuente.jpg'
       },
       {
-        title: 'El Libro de Azrael',
+        title: 'The Book of Azrael',
         author: 'Amber V. Nicole',
         year: 2022,
-        description: 'Alara, una mujer inmortal, se ve obligada a cooperar con un poderoso enemigo para evitar que un antiguo mal despierte.',
+        description: 'Alara, an immortal woman, is forced to cooperate with a powerful enemy to prevent an ancient evil from awakening.',
         image: 'assets/portadas/libroAzrael.jpg'
       }
     ];

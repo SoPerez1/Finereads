@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { ProminentAuthor } from '../prominent-author/prominent-author';
 import { Recommendation } from "../recommendation/recommendation";
 import { BookList } from '../book-list/book-list'; 
+
 @Component({
   selector: 'app-catalog',
   standalone: true,
@@ -11,36 +12,29 @@ import { BookList } from '../book-list/book-list';
   styleUrls: ['./catalog.css']
 })
 export class Catalog {
-  @Output() autorSeleccionado = new EventEmitter<string>();
+  @Output() authorSelected = new EventEmitter<string>();
 
-  gender = [
-    { id: 1, name: 'Fantasía' },
-    { id: 2, name: 'Ciencia Ficción' },
-    { id: 3, name: 'Romance' },
-    { id: 4, name: 'Misterio' }
-  ];
+  showGenres = false; 
+  selectedGenre = '';     
+  currentSection = 'home';
 
-  printGender = false; 
-  selectGender = '';     
-  seccionActual = 'home'; 
-
-  toggleGeneros() {
-    this.printGender = !this.printGender;
+  toggleGenres() {
+    this.showGenres = !this.showGenres;
   }
 
-  selectGender2(name: string) {
-    this.selectGender = name;
-    this.printGender = false; 
+  selectGenre(name: string) {
+    this.selectedGenre = name;
+    this.showGenres = false; 
   }
 
-  cambiarSeccion(seccion: string) {
-    this.seccionActual = seccion;
-    this.printGender = false;
-    this.selectGender = '';
+  changeSection(section: string) {
+    this.currentSection = section;
+    this.showGenres = false;
+    this.selectedGenre = '';
   }
 
-  seleccionarAutor(nombre: string) {
-    this.autorSeleccionado.emit(nombre);
+  selectAuthor(name: string) {
+    this.authorSelected.emit(name);
   }
 
   scrollToSection(name: string) {

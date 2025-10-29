@@ -7,17 +7,19 @@ import { CommonModule } from '@angular/common';
   templateUrl: './prominent-author.html',
   styleUrls: ['./prominent-author.css']
 })
-export class ProminentAuthor implements OnInit, OnDestroy{
-  title: string = "Autor destacado";
+export class ProminentAuthor implements OnInit, OnDestroy {
+  title: string = "Featured Author";
   name: string = "Raven Kennedy";
-  biography:string = "Su serie más aclamada se viralizó en la comunidad literaria de TikTok, BookTok, lo que le permitió abrirse paso a otros mercados y a otros países, entre ellos España. Fue en 2022 cuando Kennedy aterrizó en el mercado español con la primera entrega de la serie, La prisionera de oro. En ella se introduce a los personajes en los que la autora sigue profundizando en las siguientes partes: Glint, Gleam y Glow."
+  biography: string = "Her most acclaimed series went viral within the BookTok literary community on TikTok, which allowed her to reach other markets and countries, including Spain. In 2022, Kennedy entered the Spanish market with the first installment of the series, The Gold Prisoner. In it, she introduces the characters that she continues to develop in the following parts: Glint, Gleam, and Glow.";
 
-images = [
+  images = [
     'assets/prominentAuthor/LaPrisioneraDeOro1.jpg',
     'assets/prominentAuthor/LaPrisioneraDeOro2.jpg',
     'assets/prominentAuthor/LaPrisioneraDeOro3.jpg'
   ];
-
+  image = [
+    'assets/cats/image3.jpg'
+  ];
   currentIndex = 0;
   intervalId: any;
 

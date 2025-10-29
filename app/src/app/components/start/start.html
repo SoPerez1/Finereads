@@ -1,33 +1,36 @@
 <div class="bento-container">
 
   <div class="bento-item description">
-    <h3>¿Qué es un Book Journal?</h3>
-    <p>Un Book Journal es un espacio personal donde puedes registrar tus lecturas, reflexiones y emociones sobre los libros que lees.</p>
-    <p>Es una herramienta para organizar tus pensamientos y seguir tu progreso como lector de manera personalizada, adaptándose a tus necesidades si buscas registrar tus lecturas.</p>
-    <p>Un Book Journal puede incluir reseñas, citas favoritas y notas sobre los personajes y tramas que más te impactaron.</p>
+    <h3>What is a Book Journal?</h3>
+    <p>A Book Journal is a personal space where you can record your readings, reflections, and emotions about the books you read.</p>
+    <p>It’s a tool to organize your thoughts and track your progress as a reader in a personalized way, adapting to your needs if you want to keep a record of your readings.</p>
+    <p>A Book Journal can include reviews, favorite quotes, and notes about the characters and plots that impacted you the most.</p>
     <div class="bento-item tiny-label">
       <h2>FINEREADS</h2>
     </div>
   </div>
  
   <div class="bento-item searchHere">
-    <h3>¿Qué encontrarás en Finereads?</h3>
+    <h3>What will you find in Finereads?</h3>
       {{descriptionFinereads}}    
-      <h4>Y lo mejor de todo... ¡Solo es tuyo!</h4>
+      <h4>And the best part... it’s all yours!</h4>
   </div>
+
   <div
     class="bento-item large card-text1"
     (mouseenter)="messageOn()"
     (mouseleave)="messageOff()"
   >
     <h3>{{ bento1 }}</h3>
-    <p>Solo hace falta abrir la página correcta</p>
+    <p>You just need to open the right page</p>
 
     <div class="bento-overlay" *ngIf="printThis">
     </div>
    
   </div>
- <div class="bento-item sabiasque">
-    <img [src]="image[0]" alt="Sabías que...">
+
+  <div class="bento-item sabiasque">
+    <img [src]="image[0]" alt="Did you know...">
   </div>
+
 </div>

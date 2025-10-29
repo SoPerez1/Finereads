@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
   styleUrl: './footer.css'
 })
 export class Footer {
-  credits: string = 'Desarrollado como proyecto final de Full Stack Developer, UTN + GSC.';
-  desarrollador: string = 'Pérez Sofía';
-  moreInfo: string = '2025 Finereads. Todos los derechos reservados.';
+  credits: string = 'Developed as the final project for Full Stack Developer, UTN + GSC.';
+  developer: string = 'Sofía Pérez';
+  moreInfo: string = '2025 Finereads. All rights reserved.';
 }

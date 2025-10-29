@@ -14,6 +14,9 @@ export class BookList implements OnInit {
 
   books: any[] = [];
   selectedBook: any = null;
+  image= [
+    'assets/cats/image1.jpg'
+  ];
 
   constructor(private bookService: BookService) {}
 

@@ -1,20 +1,16 @@
 <div class="catalog-container">
   <div class="catalog-menu">
-    <button [class.active]="seccionActual === 'home'" (click)="cambiarSeccion('home')">home</button>
-    <button [class.active]="seccionActual === 'autor destacado'" (click)="cambiarSeccion('autor destacado')">autor destacado</button>
-    <button [class.active]="seccionActual === 'lecturas pendientes'" (click)="cambiarSeccion('lecturas pendientes')"> lecturas pendientes</button>
-    <button [class.active]="seccionActual === 'recomendaciones'" (click)="cambiarSeccion('recomendaciones')">recomendaciones</button>
+    <button [class.active]="currentSection === 'home'" (click)="changeSection('home')">home</button>
+    <button [class.active]="currentSection === 'featured author'" (click)="changeSection('featured author')">featured author</button>
+    <button [class.active]="currentSection === 'pending reads'" (click)="changeSection('pending reads')">pending reads</button>
+    <button [class.active]="currentSection === 'recommendations'" (click)="changeSection('recommendations')">recommendations</button>
     <button>&gt;</button>
   </div>
 
+  <app-prominent-author *ngIf="currentSection === 'featured author'"></app-prominent-author>
+  <app-recommendation *ngIf="currentSection === 'recommendations'"></app-recommendation>
 
-  
-  <app-prominent-author *ngIf="seccionActual === 'autor destacado'"></app-prominent-author>
-  <app-recommendation *ngIf="seccionActual === 'recomendaciones'"></app-recommendation>
-
-  <div *ngIf="seccionActual === 'lecturas pendientes'" class="lecturas-container">
+  <div *ngIf="currentSection === 'pending reads'" class="lecturas-container">
     <app-book-list></app-book-list>
   </div>
-
-
 </div>

@@ -4,24 +4,24 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class InyRecommendation {
-  books  = [
-    {title: 'Una Corte de Niebla y Furia',calification : '5/5', image: 'assets/portadas/nieblaFuria.jpg'},
-    {title: 'El Nombre del Viento', calification : '5/5', image: 'assets/portadas/misterio3.jpg'},
-    {title: 'La Biblioteca de los Muertos', calification : '4/5', image: 'assets/portadas/misterio2.jpg'},
-    {title: 'Los Crímenes de Oxford', calification : '4/5', image: 'assets/portadas/misterio1.jpg'},
-    {title: 'El Libro de Azrael', calification : '4/5', image: 'assets/portadas/libroAzrael.jpg'},
-    {title: 'Una Corte de Hielo y Estrellas', calification : '1.5/5', image: 'assets/portadas/hielosEstrellas.jpg'},
-    {title: ' Un Reino de Carne y Fuego', calification : '4/5', image: 'assets/portadas/carneFuego.jpg'},
-    {title: 'Binding 13', calification : '2/5', image: 'assets/portadas/binding13.jpg'},
-    {title: 'A Oscuras', calification : '3/5', image: 'assets/portadas/aOscuras.jpg'},
-    {title: 'Alas de Sangre', calification : '4/5', image: 'assets/portadas/alasSangre.jpg'},
-    {title: 'Alas de Hierro', calification : '4/5', image: 'assets/portadas/alasHierro.jpg'},
-    {title: 'Agregar nueva calificacion', image: 'assets/portadas/portadaBlanco.jpg'},
+  books = [
+    { title: 'A Court of Mist and Fury', calification: '5/5', image: 'assets/portadas/nieblaFuria.jpg' },
+    { title: 'The Name of the Wind', calification: '5/5', image: 'assets/portadas/misterio3.jpg' },
+    { title: 'The Library of the Dead', calification: '4/5', image: 'assets/portadas/misterio2.jpg' },
+    { title: 'The Oxford Murders', calification: '4/5', image: 'assets/portadas/misterio1.jpg' },
+    { title: 'The Book of Azrael', calification: '4/5', image: 'assets/portadas/libroAzrael.jpg' },
+    { title: 'A Court of Frost and Starlight', calification: '1.5/5', image: 'assets/portadas/hielosEstrellas.jpg' },
+    { title: 'A Kingdom of Flesh and Fire', calification: '4/5', image: 'assets/portadas/carneFuego.jpg' },
+    { title: 'Binding 13', calification: '2/5', image: 'assets/portadas/binding13.jpg' },
+    { title: 'In the Dark', calification: '3/5', image: 'assets/portadas/aOscuras.jpg' },
+    { title: 'Wings of Blood', calification: '4/5', image: 'assets/portadas/alasSangre.jpg' },
+    { title: 'Wings of Iron', calification: '4/5', image: 'assets/portadas/alasHierro.jpg' },
+    { title: 'Add New Rating', image: 'assets/portadas/portadaBlanco.jpg' },
   ];
 
   constructor() { }
 
-  getBooks(){
+  getBooks() {
     return this.books;
   }
 }

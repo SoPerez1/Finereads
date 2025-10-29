@@ -8,19 +8,19 @@ import { CommonModule } from '@angular/common';
   styleUrl: './start.css'
 })
 export class Start {
-bento1: string = "Algunas historias te elijen a vos";
-bento2: string ="Quien lee, habita muchos cuerpos, muchas almas, muchos destinos.";
-descriptionFinereads: string = "En Finereads, encontrarás un espacio dedicado a tus lecturas, donde podrás llevar un registro de tus libros leídos, tus pensamientos y emociones sobre cada uno de ellos. Además, podrás descubrir nuevas lecturas recomendadas, así como compartir tus propias reseñas y opiniones con otros lectores. Finereads es la herramienta perfecta para cualquier amante de los libros que desee profundizar en su experiencia de lectura.";
-image= [
+  bento1: string = "Some stories choose you";
+  bento2: string = "Those who read live many lives, many souls, many destinies.";
+  descriptionFinereads: string = "At Finereads, you’ll find a space dedicated to your readings, where you can keep track of the books you’ve read, along with your thoughts and emotions about each one. You’ll also be able to discover new recommended reads, as well as share your own reviews and opinions with other readers. Finereads is the perfect tool for any book lover who wants to deepen their reading experience.";
+  image = [
     'assets/start/image-bento.jpg'
   ];
-printThis : boolean = false;
+  printThis: boolean = false;
 
-  messageOn(){
-    this.printThis= true;
+  messageOn() {
+    this.printThis = true;
   }
 
-  messageOff(){
+  messageOff() {
     this.printThis = false;
   }
 }
