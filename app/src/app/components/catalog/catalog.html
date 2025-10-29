@@ -1,16 +1,25 @@
 <div class="catalog-container">
+
   <div class="catalog-menu">
-    <button [class.active]="currentSection === 'home'" (click)="changeSection('home')">home</button>
-    <button [class.active]="currentSection === 'featured author'" (click)="changeSection('featured author')">featured author</button>
-    <button [class.active]="currentSection === 'pending reads'" (click)="changeSection('pending reads')">pending reads</button>
-    <button [class.active]="currentSection === 'recommendations'" (click)="changeSection('recommendations')">recommendations</button>
-    <button>&gt;</button>
+    <button (click)="scrollToSection('home')">home</button>
+    <button (click)="scrollToSection('featured-author')">featured author</button>
+    <button (click)="scrollToSection('pending-reads')">pending reads</button>
+    <button (click)="scrollToSection('recommendations')">recommendations</button>
   </div>
 
-  <app-prominent-author *ngIf="currentSection === 'featured author'"></app-prominent-author>
-  <app-recommendation *ngIf="currentSection === 'recommendations'"></app-recommendation>
+  <div id="home" class="section"> 
+    <app-start></app-start>
+  </div>
 
-  <div *ngIf="currentSection === 'pending reads'" class="lecturas-container">
+  <div id="featured-author" class="section">
+    <app-prominent-author></app-prominent-author>
+  </div>
+
+  <div id="pending-reads" class="section">
     <app-book-list></app-book-list>
+  </div>
+
+  <div id="recommendations" class="section">
+    <app-recommendation></app-recommendation>
   </div>
 </div>
